@@ -38,4 +38,12 @@ if has_high_income or has_good_credit:
 #OR: Atleast one condition has to be met
 #NOT: Opposite has to be true i.e. F is T
     
+                                                                                                                                                                    #Comparison Operators
     
+name = input ("Please enter your name")
+if len(name)<3:
+       print("name must be mroe then 3 characters")
+elif len (name)>50:
+       print("Name must be less the 50 characters")
+else:
+       print("hi" + name + "How are you?")
