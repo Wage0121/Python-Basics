@@ -1,0 +1,28 @@
+                                                                                                                                                                    #If statement
+is_hot = True    #boolean
+if is_hot:
+        print("It's a hot day")
+print("Enjoy your day")
+
+#Conditions
+is_hot= False     
+is_cold=False 
+
+if is_hot:
+        print("It's a hot day")
+        print("Drink plenty of water")
+
+elif is_cold:
+        print("it's a cold day")
+        print("Wear warm cold")
+
+                                                                                                                                                                    #example
+#The example below shows the price difference from two conditions based of the user having good credit.
+
+price=1000000
+has_good_credit=True
+if has_good_credit:
+        down_payment = 0.1 * price
+else:
+    down_payment = 0.2 * price
+    print(f'Down Payment:{down_payment}')
