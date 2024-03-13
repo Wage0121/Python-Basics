@@ -1,0 +1,13 @@
+                                                        #Python Basics
+# This is basic code on how to print a string
+
+print("Hello world")
+print("hello there")
+print("Wajid Qureshi")
+
+print("o=====")
+print("IIIII")
+
+#Expression
+print("*" * 10)     
+
