@@ -1,0 +1,39 @@
+                                                                                                                                                #Strings
+
+#Formatted Strings
+first = "John"
+last = "Smith"
+msg = f'{first} {last} is a coder'
+print(msg)
+
+#String Methods - Len is a word count
+course = 'python for beginners'
+print (len(course))  
+
+#To change font
+course = 'python for beginners'
+print(course.upper())
+print(course.lower())
+
+#Find letters
+course = 'python for beginners'
+print(course.find("p"))
+#shows index of letter
+
+#Replace words
+course = 'python for beginners'
+print(course.replace("beginners", "newbies"))
+
+#Boolean T or F
+course = 'python for beginners'
+print("python" in course)
+#Will return T or F to confirm the above
+
+                                                                                                                                                #Cheat sheet 
+# Len() = Check length
+# course.upper() = uppercase
+# course.lower() = lowercase
+# course.title() = capitalises first letter in each word
+# course.find () = confirms with T or f is condition is met
+# course.replace() = replaces word or characters
+# "..." = checks if a word or substring exists within a string, returning True or False
