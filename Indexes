@@ -1,0 +1,10 @@
+                                                                                                            #Indexes
+
+#Indexes are represented by the place of characters in strings
+
+course = "python for beginners"
+#         012345
+print (course[1])
+#This will print the Y only
+
+#[0:3] Shows 1 - 2 but misses 3 i.e. "pyt"
