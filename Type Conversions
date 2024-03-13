@@ -1,0 +1,16 @@
+                                                                                                                                  Type Conversions
+
+#This is used to convert input to integer to calculate age of user
+birth_year = input("Birth Year: ")
+age = 2019 - int(birth_year)
+print(age)
+
+#Excercize - Convert lbs to kg
+weight = input("What is your weight in pounds? ")
+kg = int(weight) * 0.45
+print(kg)
+
+#Tips
+#To create long sentence use 3 """
+course = """My name is waj,
+            hope you're good."""
