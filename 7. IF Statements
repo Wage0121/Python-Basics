@@ -26,3 +26,16 @@ if has_good_credit:
 else:
     down_payment = 0.2 * price
     print(f'Down Payment:{down_payment}')
+
+                                                                                                                                                                    #logical operatiors
+    
+has_high_income = True
+has_good_credit = False
+if has_high_income or has_good_credit:
+    print("Eligable for loan")
+
+#AND: Both conditions have to be met
+#OR: Atleast one condition has to be met
+#NOT: Opposite has to be true i.e. F is T
+    
+    
