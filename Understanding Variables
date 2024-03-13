@@ -1,0 +1,27 @@
+                                                                                                                                                #Variables
+#Integer = Whole number
+#Float = Decimals
+#Strings = Words
+#Boolean = True or False
+
+price = 10        #What price is equal to
+print(price)      #Prints the price  
+
+price = 10         
+price = 20
+print(price)
+
+#Storing variables.
+
+f_name = "John Smith"
+age = 20
+is_new = True
+
+#This requests for a name and concatenates it.
+name = input ("What is your name")
+print ("Hi" + name)
+
+#Concatinations - asks user two questions and combines them to a string.
+name = input ("What is your name?")
+color = input ("What is your favourite color")
+print (name + "likes" + color)
