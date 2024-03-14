@@ -1,0 +1,30 @@
+                                                                                                                                                                        #Classes and Constructors
+
+class Person:                                                                   #class
+    def __init__(self, age, weight, height, first_name, last_name):             #defines
+        self.age = age
+        self.weight = weight
+        self.height = height
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def walk(self):
+        print(f"{self.first_name} is walking.")
+
+    def run(self):
+        print(f"{self.first_name} is running.")
+
+    def jog(self):
+        print(f"{self.first_name} is jogging." )
+      
+    def talk(self):
+        print(f"{self.first_name} is talking." ) 
+
+# Create a Person object
+user = Person(35, 80, 177, "Waj", "Q")
+
+
+# Call the walk and run methods
+user.walk()
+user.jog()
+user.walk()
