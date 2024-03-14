@@ -7,6 +7,40 @@ while i <= 5:
     i=i+1
 print("done")
 
+							                                                                                                    #Continuous  while loop
+x = 0
+while x < 6:
+    x += 1
+    if x == 4:
+        continue
+    print(x)
+This should skip 4
+
+							                                                                                                            #Adding break
+a = 1
+while a <14:
+    print(a)
+    if a ==4:
+        break
+    a += 1
+
+This stops after 4 is hit.
+
+                                                                                                                #Practice loop "great job 3 times"
+x="Great Job"
+y=1
+while y<=3:
+    print(x)
+    y+=1
+
+                                                                                                                    #Loop numbers from 1 but stop at 6
+a = 1
+while a <10:
+    print(a)
+    if a ==6:
+        break
+    a += 1
+
                                                                                                                       #While Loop Guessing Game
                                                                                                                       
 #The following code is a guessing game were the user has three attempts to guess 9, if they get it right, they win, if not they receive a message saying they lose.
