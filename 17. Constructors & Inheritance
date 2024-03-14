@@ -1,0 +1,23 @@
+                                                                                                                                                          #Constructors and inheritance
+
+# A constructor initializes the state of an object when it's created.
+# Inheritance allows a class to reuse code from another class, gaining its attributes and methods.
+
+
+class Mammal:                   #parent classs
+    def walk(self):             #links these to mamal class
+        print("walk")
+
+class Dog(Mammal):              
+    def bark(self):
+        print(f"bark")                      #you can add specific methods to each
+
+
+class Cat(Mammal):
+    def meow(self):
+        print("meow")
+
+dog1 = Dog()
+dog1.walk()
+cat1=Cat()
+cat1.meow()
