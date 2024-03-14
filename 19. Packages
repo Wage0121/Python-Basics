@@ -1,0 +1,24 @@
+1. A package in Python is simply a directory that contains Python modules and an additional __init__.py file. The __init__.py file can be empty or contain initialization code for the package.
+2. To create a package, you need to create a directory with a name representing your package, and inside that directory, you can create Python modules (.py files) and the __init__.py file.
+
+my_package/
+├── __init__.py
+├── module1.py
+└── module2.py
+
+3. Once you have created a package, you can import modules from it using dot notation.
+
+# Importing a module from a package
+import my_package.module1
+
+# Using a function from the imported module
+my_package.module1.some_function()
+
+                                                                                                                              Example 2
+#Shipping.py file
+def calc_shipping():
+  print("Shipping is being calculated")
+
+#App.py
+from ecommerce import shipping
+shipping.calc_shipping.
