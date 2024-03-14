@@ -1,0 +1,36 @@
+                                                                                                                                                                    #Lists
+
+names = ["Waj","Maj","Ayesha","Adam"]
+print (names)
+print (names[0])   # prints first name i.e. Waj
+names [1] = "Wajid" # changes name in list
+
+#Find Max number
+numbers = [3,6,9,12,15]
+max = numbers [0] 
+for number in numbers:
+    if number > max:
+        max = number
+print(max)
+
+#2D lists 
+
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+for row in matrix:       #iterates through code and prints each number from matrix.
+    for item in row:
+        print(item)
+
+#2D Lists excersize
+
+matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+print (matrix[0][2]) #The first number corresponds to which row i.e. 1 would be 2
+                     #and the second corresponds to which number in row.
+
