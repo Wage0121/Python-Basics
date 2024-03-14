@@ -1,0 +1,25 @@
+                                                                                                                          #While Loops
+#The coding below starts of with i being equal to 1 and each time within the loop it adds 1 to i.e. until it reaches then 5 then completes.
+
+i = 1
+while i <= 5:
+    print(i)
+    i=i+1
+print("done")
+
+                                                                                                                      #While Loop Guessing Game
+                                                                                                                      
+#The following code is a guessing game were the user has three attempts to guess 9, if they get it right, they win, if not they receive a message saying they lose.
+
+secret_number = 9
+guess_count = 0 
+guess_limit = 3
+while guess_count < guess_limit:
+    guess =int(input("Guess: "))
+    guess_count = guess_count+1
+    if guess == secret_number:
+        print("You Won!")
+        break
+else:
+    print("You lose") 8
+                                                                                                                        
