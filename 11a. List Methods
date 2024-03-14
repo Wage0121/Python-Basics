@@ -1,0 +1,42 @@
+                                                                                                                                                      #List method Cheatsheet
+  numbers.remove(5) #Removes whichever number is in bracket
+  number.clear() #clears numbers
+  numbers.pop() #removes last number
+  numbers.sort() #sorts numbers in order
+  numbers.reverse() #reverses order 
+  numbers.copy() #seperates list
+  print(numbers.replace)#replaces numbers
+  print(number.count(5)) #shows what index number is
+  print(50 in numbers) #displays if statement is T or F
+  print(numbers.count(5)) #shows how many numbers there are.
+
+
+                                                                                                                                                                 #Examples 
+#Append adds number to end i.e. 5,2,1,7,4,20
+numbers = [5,2,1,7,4]
+numbers.append(20)
+print(numbers)
+
+#insert replaces 0 index with number 10.
+numbers = [0,2,4,5,6]
+numbers.insert(0,10)
+print(numbers)
+                                                                                                           
+                                                                                                                                                                                                                                                                
+                                                                                                                                                          #Remove duplicates from list
+                   
+# Original list of numbers
+numbers = [2, 2, 4, 6, 3, 4, 6, 1]
+
+# creates an empty list
+uniques = []
+
+# loops through all the different different numbers
+for number in numbers:
+    # checks to see which numbers are not in the unique list
+    if number not in uniques:
+        # adds missing numbers therefore ignoring duplicates
+        uniques.append(number)
+
+# Print the list of unique numbers
+print(uniques)
