@@ -1,0 +1,46 @@
+                                                                                                                                                                #Dictionaries
+customer = {                        #Stores details under customer field
+  "name": "John Smith",
+   "age": 30,
+   "is_verified":True
+}
+
+customer["name"]
+print(customer["name"])             #Links back to customer field to grab information
+
+                                                                                                                                                                #Dictionary example
+                                                                                                                                                                
+# Prompt the user to input a phone number and store it in the variable "phone"
+phone = input("phone: ")
+
+# Define a dictionary that maps digits to their word representations
+digits_mapping = {
+    "1": "one",
+    "2": "two",
+    "3": "three",
+    "4": "four"
+}
+# Initialize an empty string to store the word representations of the digits
+output = " "
+
+# Iterate over each character (digit) in the phone number input by the user
+for ch in phone:
+    # Look up the current digit in the digits_mapping dictionary and append its word representation to the output string
+    # If the digit is not found in the dictionary, append "!" instead
+    output += digits_mapping.get(ch, "!") + " "
+
+# Print the final output string containing the word representations of the digits in the input phone number
+print(output)
+
+                                                                                                                                                            #Converting emojis excersize
+message = input(">")
+words = message.split(" ") #Splits message and stores them in list
+emojis ={
+    ":)":"😀"  #defines what words link to what emojis
+}
+print (words)
+
+output = " "   #empty string to store modified messages
+for word in words:  # iterates through each word extracted from the input
+    output += emojis.get(word, word) + " " #compares the input to dictionary to make whatever changes
+print(output)
