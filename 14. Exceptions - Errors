@@ -1,0 +1,15 @@
+                                                                                                                                                                              #Exceptions 
+
+#Exit code = 0  == Code is fine
+#Exit code = 1 == Code has crashed
+
+#This is a code you can use to display a message instead of error code.
+try:
+    age=int(input("Please enter your age: "))
+    income = 20000
+    risk = income / age
+    print(risk)
+except ZeroDivisionError:
+    print("Age cannot be 0")
+except ValueError:
+    print("Invalid Value")
