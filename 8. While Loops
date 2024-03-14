@@ -1,4 +1,4 @@
-                                                                                                                          #While Loops
+                                                                                                                        					  #While Loops
 #The coding below starts of with i being equal to 1 and each time within the loop it adds 1 to i.e. until it reaches then 5 then completes.
 
 i = 1
@@ -14,7 +14,7 @@ while x < 6:
     if x == 4:
         continue
     print(x)
-This should skip 4
+#This should skip 4
 
 							                                                                                                            #Adding break
 a = 1
@@ -24,7 +24,7 @@ while a <14:
         break
     a += 1
 
-This stops after 4 is hit.
+#This stops after 4 is hit.
 
                                                                                                                 #Practice loop "great job 3 times"
 x="Great Job"
