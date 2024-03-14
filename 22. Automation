@@ -1,0 +1,39 @@
+                                                                                                                                                                                            #Automation
+#Automation is creating code to automate processes to save time
+#The coding below imports an openpyxl package to read excel document, modifies and creates charts automatically by running the script.  
+
+import openpyxl as xl
+from openpyxl.chart import BarChart, Reference
+
+def process_workbook(filename):
+    # Load the workbook
+    wb = xl.load_workbook(filename)
+    # Access the "Sheet1" worksheet
+    sheet = wb["Sheet1"]
+
+    # Iterate over each row starting from the second row
+    for row in range(2, sheet.max_row + 1):
+        # Access the cell in the third column for the current row
+        cell = sheet.cell(row, 3)
+        # Calculate the corrected price by multiplying the cell value by 0.9
+        corrected_price = cell.value * 0.9
+        # Access the cell in the fourth column for the current row
+        corrected_price_cell = sheet.cell(row, 4)
+        # Set the value of the corrected price in the fourth column
+        corrected_price_cell.value = corrected_price
+
+    # Create a reference to the values in the fourth column for creating the chart
+    values = Reference(sheet, min_row=2, max_row=sheet.max_row, min_col=4, max_col=4)
+
+    # Create a bar chart object
+    chart = BarChart()
+    # Add the data from the reference to the chart
+    chart.add_data(values)
+    # Add the chart to the worksheet, starting from cell E2
+    sheet.add_chart(chart, "E2")  
+
+    # Save the modified workbook back to the same filename
+    wb.save(filename)
+
+# Call the process_workbook function with the filename "transactions.xlsx"
+process_workbook("transactions.xlsx")
