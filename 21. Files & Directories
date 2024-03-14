@@ -1,0 +1,16 @@
+                                                                                                                                                                            #Files and Directories
+
+#the code below shows if a path exists
+from pathlib import Path      #shows if files exists
+path=Path("ecommerce")
+print(path.exists)            #T or F if path exists
+
+#Shows all files in directory
+from pathlib import Path
+path = Path()
+for file in path.glob("*"):
+    print(file)
+
+                                                                                                                                                                           #Python Package Index (pypi)
+
+#in CMD type pip install open pyxl
