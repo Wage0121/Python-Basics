@@ -1,0 +1,39 @@
+                                                                                                                                                        #Functions
+
+def greet_user():  #creates a function and applies properties to it 
+    print("Hi There!")
+    print("Welcome Aboard!")
+
+print("start")
+greet_user() #execute function
+print("Finish")
+
+                                                                                                                                                        #Parametres
+def greet_user(name):   #name is the parametre
+    print(f'Hi {name}!') #concatinate string with parametre
+    print('Welcome aboard')
+
+print("Start")
+greet_user("John") #John is passed onto the parametre
+print("Finish")
+
+                                                                                                                                                        #Return Values
+enter=int(input("please enter a number you want the square root of: "))
+def square(number):
+    return enter*enter
+
+print(square)
+
+                                                                                                                                                        #reusable fuction
+def emoji_convertor(message):  
+    words = message.split(" ") # Splits message into individual words
+    emojis = {                 # Dictionary mapping words to emojis
+        ":)":"😀"
+    }
+    output = ""                # Creates an empty string to store modified message
+    for word in words:
+        output += emojis.get(word, word) + " "
+    return output              # Returns modified message
+
+message = input(">") 
+print(emoji_convertor(message)) 
