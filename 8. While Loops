@@ -23,3 +23,32 @@ while guess_count < guess_limit:
 else:
     print("You lose") 8
                                                                                                                         
+                                                                                                                            #Car game excersize
+#Simple programme that uses a user controlled while loop along with if statements where user can control state of car via the code.
+
+started = False
+while True:
+    car = input("> ").lower()
+    if car == "start":
+        if started:
+            print("Car already started")
+        else:
+            started = True
+            print("Car started.. ready to go")
+    elif car == "stop":
+        if not started:
+            print("Car is already stopped")
+        else:
+            started = False
+            print("The car has stopped")
+    elif car == "help":
+        print("""
+Start - To start the car
+Stop - To stop the car
+Quit - To Exit
+""")
+    elif car == "quit":
+        print("Quitting the program...")
+        break
+    else:
+        print("Sorry, I don't understand")
