@@ -1,0 +1,33 @@
+                                                                                                                                              #Nested Loops
+
+for x in range (4):
+    for y in range (2):
+        print(f"({x} , {y})")
+
+                                                                                                                                            #Nested Loop excersize
+# Define a list of numbers
+numbers = [5, 2, 5, 2, 2]
+
+# Loop through each number in the list
+for x_count in numbers:
+    # Initialize an empty string to hold 'x' characters
+    output = ''
+    
+    # Loop from 0 to x_count - 1
+    for count in range(x_count):
+        # Append 'x' to the output string for each iteration of the inner loop
+        output += 'x'
+    
+    # Print the output string after the inner loop completes
+    print(output)
+
+                                                                                                                                              #Nested loop excersize 2
+
+rows = int(input("Please enter number of Rows: "))
+columns = int(input("Please enter number of columns: "))
+symbols = input("Please enter a symbol of choice: ")
+
+for x in range (rows):
+    for y in range(columns):
+        print(symbols, end="")
+    print ()
