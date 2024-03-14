@@ -1,0 +1,30 @@
+                                                                                                                                                          #Modules
+# A Module is a seprate piece of coding to import universal data thats used throughout the code.                                                                                                                                                          
+#Save code to a different py file
+
+#inport converters
+  converters. #pick whichever file you want
+print(converters)
+
+#Easy way
+import converters
+from converters import #if you press control and space youll see different options.
+
+                                                                                                                                                      #Modules Explained
+                                                                                                                                                      
+#The utils py file has all the code and the app.py is requesting for the code to use the algorithm
+
+#utils.py file
+def find_max(numbers):
+    max_value = numbers[0]
+    for number in numbers:
+        if number > max_value:
+            max_value = number
+    return max_value
+
+#app.py file
+from utils import find_max
+
+numbers = [10, 3, 6, 2]
+max_value = find_max(numbers)
+print(max_value)
